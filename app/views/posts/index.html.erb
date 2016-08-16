@@ -3,5 +3,6 @@
 <% @posts.each do |post| %>
 	<h2> <%= post.title %> </h2>
 <%= link_to 'show_post' , post_path(post) %>
+<%= link_to 'Edit Post', edit_post_path(post) %>
 <% end %>
 
